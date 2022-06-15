@@ -27,6 +27,7 @@ body
             height: 50px
             width: 100%
             margin-top: 20px
+            position: relative
             input,button
                 height: 100%
                 width: 100%
@@ -43,16 +44,31 @@ body
                 font-size: 1em
                 font-weight: 400 //Fuente 400 poppins
                 border-radius: 6px
+                cursor: pointer
 
         .form-link
             text-align: center
             margin-top: 10px
+            font-size: 14px
+            font-weight: 400
             a
-                //
-
+                text-decoration: none
+                color: #0171d3
+                &:hover
+                    text-decoration: underline
+            span
+                color: #232836
+        .input-field
+            i //ícono de ojo
+                font-size: 18px
+                color: #8b8b8b
+                position: absolute
+                top: 50%
+                right: 5%
+                transform: translateY(-50%) //Centramos verticalmente el ojo
+                cursor: pointer
+                padding: 5px
 .button-field
-    //
-.input-field
     //
 
 

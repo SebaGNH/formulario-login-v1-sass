@@ -29,6 +29,7 @@ body {
   height: 50px;
   width: 100%;
   margin-top: 20px;
+  position: relative;
 }
 .form form .field input, .form form .field button {
   height: 100%;
@@ -47,10 +48,33 @@ body {
   font-size: 1em;
   font-weight: 400;
   border-radius: 6px;
+  cursor: pointer;
 }
 .form form .form-link {
   text-align: center;
   margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.form form .form-link a {
+  text-decoration: none;
+  color: #0171d3;
+}
+.form form .form-link a:hover {
+  text-decoration: underline;
+}
+.form form .form-link span {
+  color: #232836;
+}
+.form form .input-field i {
+  font-size: 18px;
+  color: #8b8b8b;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
