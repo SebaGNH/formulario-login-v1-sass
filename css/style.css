@@ -15,23 +15,26 @@ body {
   min-height: 100vh;
 }
 
-.form {
+main {
+  width: 430px;
+}
+main .form {
   background-color: #fff;
-  max-width: 430px;
   width: 100%;
   padding: 30px;
   border-radius: 6px;
 }
-.form header {
+main .form header {
   margin-top: 30px;
+  text-align: center;
 }
-.form form .field {
+main .form .field {
+  position: relative;
   height: 50px;
   width: 100%;
   margin-top: 20px;
-  position: relative;
 }
-.form form .field input, .form form .field button {
+main .form .field input {
   height: 100%;
   width: 100%;
   border: 1px solid #cacaca;
@@ -39,8 +42,12 @@ body {
   font-size: 1em;
   font-weight: 400;
   border-radius: 6px;
+  outline: none;
 }
-.form form .field button {
+main .form .field input:focus {
+  border-bottom-width: 2px;
+}
+main .form .field button {
   height: 100%;
   width: 100%;
   border: none;
@@ -49,24 +56,30 @@ body {
   font-weight: 400;
   border-radius: 6px;
   cursor: pointer;
+  background-color: #0171d3;
+  color: #fff;
+  transition: all 0.3s ease;
 }
-.form form .form-link {
+main .form .field button:hover {
+  background-color: #016dcb;
+}
+main .form .form-link {
   text-align: center;
   margin-top: 10px;
   font-size: 14px;
   font-weight: 400;
 }
-.form form .form-link a {
+main .form .form-link a {
   text-decoration: none;
   color: #0171d3;
 }
-.form form .form-link a:hover {
+main .form .form-link a:hover {
   text-decoration: underline;
 }
-.form form .form-link span {
+main .form .form-link span {
   color: #232836;
 }
-.form form .input-field i {
+main .form .input-field i {
   font-size: 18px;
   color: #8b8b8b;
   position: absolute;
@@ -75,6 +88,35 @@ body {
   transform: translateY(-50%);
   cursor: pointer;
   padding: 5px;
+}
+main .line {
+  position: relative;
+  background-color: #d4d4d4;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+}
+main .line::before {
+  content: "Or";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #232836;
+}
+main .media-options {
+  color: #fff;
+}
+main .media-options .facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4267b2;
+  border-radius: 6px;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

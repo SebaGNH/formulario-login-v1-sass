@@ -13,22 +13,25 @@ body
     justify-content: center
     align-items: center
     min-height: 100vh
-
-.form
-    background-color: #fff
-    max-width: 430px
-    width: 100%
-    padding: 30px
-    border-radius: 6px
-    header
-        margin-top: 30px
-    form
+main
+    //max-width: 430px
+    width: 430px
+    .form
+        background-color: #fff
+        //max-width: 430px
+        width: 100%        
+        padding: 30px
+        border-radius: 6px
+        header
+            margin-top: 30px
+            text-align: center
+        //form
         .field
+            position: relative
             height: 50px
             width: 100%
             margin-top: 20px
-            position: relative
-            input,button
+            input
                 height: 100%
                 width: 100%
                 border: 1px solid #cacaca
@@ -36,6 +39,10 @@ body
                 font-size: 1em
                 font-weight: 400 //Fuente 400 poppins
                 border-radius: 6px
+
+                outline: none  //Libea en bordes
+                &:focus
+                    border-bottom-width: 2px //Le da un borde al hacer focus
             button
                 height: 100%
                 width: 100%
@@ -45,6 +52,12 @@ body
                 font-weight: 400 //Fuente 400 poppins
                 border-radius: 6px
                 cursor: pointer
+
+                background-color: #0171d3
+                color: #fff
+                transition: all .3s ease
+                &:hover
+                    background-color: #016dcb
 
         .form-link
             text-align: center
@@ -58,7 +71,7 @@ body
                     text-decoration: underline
             span
                 color: #232836
-        .input-field
+        .input-field 
             i //ícono de ojo
                 font-size: 18px
                 color: #8b8b8b
@@ -68,7 +81,41 @@ body
                 transform: translateY(-50%) //Centramos verticalmente el ojo
                 cursor: pointer
                 padding: 5px
-.button-field
-    //
+
+    .line
+        position: relative
+        background-color: #d4d4d4
+        height: 1px
+        width: 100%
+        margin: 36px 0
+        &::before
+            content: 'Or'
+            position: absolute
+            top: 50%
+            left: 50% //con rigth al 50% no quedaba bien centrado
+            transform: translate(-50%,-50%)
+            background-color: #fff
+            color: #232836
+
+    .media-options
+        //display: flex
+        //justify-content: center 
+        //align-items: center         
+        color: #fff 
+        
+        .facebook
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #4267b2
+            border-radius: 6px
+            width: 100%
+            color: #fff
+            text-decoration: none
+            i //ícono facebook
+            span
+                //color: red
+    .button-field
+        //
 
 
