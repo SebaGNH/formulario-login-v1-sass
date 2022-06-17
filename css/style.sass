@@ -22,65 +22,66 @@ main
         width: 100%        
         padding: 30px
         border-radius: 6px
-        header
-            margin-top: 30px
-            text-align: center
-        //form
-        .field
-            position: relative
-            height: 50px
-            width: 100%
-            margin-top: 20px
-            input
-                height: 100%
+        .form-content
+            header
+                margin-top: 30px
+                text-align: center
+            //form
+            .field
+                position: relative
+                height: 50px
                 width: 100%
-                border: 1px solid #cacaca
-                padding: 0 15px
-                font-size: 1em
-                font-weight: 400 //Fuente 400 poppins
-                border-radius: 6px
+                margin-top: 20px
+                input
+                    height: 100%
+                    width: 100%
+                    border: 1px solid #cacaca
+                    padding: 0 15px
+                    font-size: 1em
+                    font-weight: 400 //Fuente 400 poppins
+                    border-radius: 6px
 
-                outline: none  //Libea en bordes
-                &:focus
-                    border-bottom-width: 2px //Le da un borde al hacer focus
-            button
-                height: 100%
-                width: 100%
-                border: none
-                padding: 0 15px
-                font-size: 1em
-                font-weight: 400 //Fuente 400 poppins
-                border-radius: 6px
-                cursor: pointer
+                    outline: none  //Libea en bordes
+                    &:focus
+                        border-bottom-width: 2px //Le da un borde al hacer focus
+                button
+                    height: 100%
+                    width: 100%
+                    border: none
+                    padding: 0 15px
+                    font-size: 1em
+                    font-weight: 400 //Fuente 400 poppins
+                    border-radius: 6px
+                    cursor: pointer
 
-                background-color: #0171d3
-                color: #fff
-                transition: all .3s ease
-                &:hover
-                    background-color: #016dcb
+                    background-color: #0171d3
+                    color: #fff
+                    transition: all .3s ease
+                    &:hover
+                        background-color: #016dcb
 
-        .form-link
-            text-align: center
-            margin-top: 10px
-            font-size: 14px
-            font-weight: 400
-            a
-                text-decoration: none
-                color: #0171d3
-                &:hover
-                    text-decoration: underline
-            span
-                color: #232836
-        .input-field 
-            i //ícono de ojo
-                font-size: 18px
-                color: #8b8b8b
-                position: absolute
-                top: 50%
-                right: 5%
-                transform: translateY(-50%) //Centramos verticalmente el ojo
-                cursor: pointer
-                padding: 5px
+            .form-link
+                text-align: center
+                margin-top: 10px
+                font-size: 14px
+                font-weight: 400
+                a
+                    text-decoration: none
+                    color: #0171d3
+                    &:hover
+                        text-decoration: underline
+                span
+                    color: #232836
+            .input-field 
+                i //ícono de ojo
+                    font-size: 18px
+                    color: #8b8b8b
+                    position: absolute
+                    top: 50%
+                    right: 5%
+                    transform: translateY(-50%) //Centramos verticalmente el ojo
+                    cursor: pointer
+                    padding: 5px
 
     .line
         position: relative
@@ -97,13 +98,8 @@ main
             background-color: #fff
             color: #232836
 
-    .media-options
-        //display: flex
-        //justify-content: center 
-        //align-items: center         
-        color: #fff 
-        
-        .facebook
+    .media-options   
+        .facebook, .google
             display: flex
             justify-content: center
             align-items: center
@@ -112,10 +108,41 @@ main
             width: 100%
             color: #fff
             text-decoration: none
+            height: 50px    
+            position: relative        
             i //ícono facebook
+                background-color: #fff
+                color: #0171d3
+                width: 28px
+                height: 28px
+                font-size: 20px
+                border-radius: 50%
+                display: flex //centramos el ícono
+                align-items: center
+                justify-content: center
+
+                position: absolute
+                top: 50%
+                left: 10%
+                transform: translate(-50%,-50%)
             span
                 //color: red
+        .google
+            background-color: #fff
+            border: 1px solid #cacaca
+            color: #0171d3
+            margin-top: 20px
+            i
+                color:  #34a853
+            span
+                color: #000
+                font-weight: 500
+                opacity: .5
     .button-field
         //
 
 
+
+
+
+    

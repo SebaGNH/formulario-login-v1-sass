@@ -24,17 +24,17 @@ main .form {
   padding: 30px;
   border-radius: 6px;
 }
-main .form header {
+main .form .form-content header {
   margin-top: 30px;
   text-align: center;
 }
-main .form .field {
+main .form .form-content .field {
   position: relative;
   height: 50px;
   width: 100%;
   margin-top: 20px;
 }
-main .form .field input {
+main .form .form-content .field input {
   height: 100%;
   width: 100%;
   border: 1px solid #cacaca;
@@ -44,10 +44,10 @@ main .form .field input {
   border-radius: 6px;
   outline: none;
 }
-main .form .field input:focus {
+main .form .form-content .field input:focus {
   border-bottom-width: 2px;
 }
-main .form .field button {
+main .form .form-content .field button {
   height: 100%;
   width: 100%;
   border: none;
@@ -60,26 +60,26 @@ main .form .field button {
   color: #fff;
   transition: all 0.3s ease;
 }
-main .form .field button:hover {
+main .form .form-content .field button:hover {
   background-color: #016dcb;
 }
-main .form .form-link {
+main .form .form-content .form-link {
   text-align: center;
   margin-top: 10px;
   font-size: 14px;
   font-weight: 400;
 }
-main .form .form-link a {
+main .form .form-content .form-link a {
   text-decoration: none;
   color: #0171d3;
 }
-main .form .form-link a:hover {
+main .form .form-content .form-link a:hover {
   text-decoration: underline;
 }
-main .form .form-link span {
+main .form .form-content .form-link span {
   color: #232836;
 }
-main .form .input-field i {
+main .form .form-content .input-field i {
   font-size: 18px;
   color: #8b8b8b;
   position: absolute;
@@ -105,10 +105,7 @@ main .line::before {
   background-color: #fff;
   color: #232836;
 }
-main .media-options {
-  color: #fff;
-}
-main .media-options .facebook {
+main .media-options .facebook, main .media-options .google {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,6 +114,37 @@ main .media-options .facebook {
   width: 100%;
   color: #fff;
   text-decoration: none;
+  height: 50px;
+  position: relative;
+}
+main .media-options .facebook i, main .media-options .google i {
+  background-color: #fff;
+  color: #0171d3;
+  width: 28px;
+  height: 28px;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+main .media-options .google {
+  background-color: #fff;
+  border: 1px solid #cacaca;
+  color: #0171d3;
+  margin-top: 20px;
+}
+main .media-options .google i {
+  color: #34a853;
+}
+main .media-options .google span {
+  color: #000;
+  font-weight: 500;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */
